@@ -2,30 +2,35 @@
     import { Card } from 'flowbite-svelte';
     import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
     import { Popover, Button, Avatar } from 'flowbite-svelte';
+    import Profile from "$lib/assets/profile.jpg";
+    import Figma from "$lib/assets/figma.png";
+    import Xd from  "$lib/assets/adobe-xd.png";
+    import Photoshop from  "$lib/assets/photoshop.png";
+    import Canva from  "$lib/assets/canva.png";
  </script>
  
  <div class="flex justify-center mt-16 text-4xl dark:text-slate-50 font-semibold">Design Tools 🎨</div>
  <div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center">  
         <Card href="/cards" class="col-span-1" >
-            <img src="/src/routes/components/images/figma.png" alt="Figma" class="w-14 h-14">
+            <img src={Figma} alt="Figma" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Figma</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Figma is a collaborative design tool in the cloud, allowing users to create, prototype, and iterate on interface designs seamlessly.</p>
         </Card>
         
         <Card href="/cards" class="col-span-1" >
-            <img src="/src/routes/components/images/adobe-xd.png" alt="Adobe XD" class="w-14 h-14">
+            <img src={Xd} alt="Adobe XD" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Adobe XD</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Adobe XD is Adobe's design and prototyping tool for creating user experiences in web and mobile applications.</p>
         </Card>
         
         <Card href="https://www.adobe.com/products/photoshop.html" class="col-span-1" >
-            <img src="/src/routes/components/images/photoshop.png" alt="Adobe Photoshop" class="w-14 h-14">
+            <img src={Photoshop} alt="Adobe Photoshop" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Adobe Photoshop</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
                 Adobe Photoshop is a versatile raster graphics editing software used for tasks like photo editing, graphic design, and digital art creation.</p>
         </Card>
         <Card href="/cards" class="col-span-1" >
-            <img src="/src/routes/components/images/canva.png" alt="Canva" class="w-14 h-14">
+            <img src={Canva} alt="Canva" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Canva</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight text-sm">Canva is a user-friendly online graphic design platform for creating a variety of visual content, from social media graphics to presentations.</p>
         </Card>
@@ -58,7 +63,7 @@
 <Popover triggeredBy="#b2" class="w-64 text-sm font-light text-gray-500 bg-white dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
 <div class="p-3">
   <div class="flex justify-between items-center mb-2">
-    <Avatar href="https://github.com/mwwlean" src="/src/routes/components/images/profile.jpg" alt="mwwlean" />
+    <Avatar href="https://github.com/mwwlean" src={Profile} alt="mwwlean" />
       <a href="https://github.com/mwwlean"><Button size="xs">View Github Profile</Button></a> 
   </div>
   <div class="text-base font-semibold leading-none text-gray-900 dark:text-white">

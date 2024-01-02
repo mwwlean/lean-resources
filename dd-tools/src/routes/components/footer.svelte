@@ -1,7 +1,7 @@
 <script>
     import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
     import { Popover, Button, Avatar } from 'flowbite-svelte';
-    import Images from "$lib/assets/profile.jpg"
+    import Profile from "$lib/assets/profile.jpg";
   </script>
  
     <Footer>
@@ -11,7 +11,7 @@
   <Popover triggeredBy="#b2" class="w-64 text-sm font-light text-gray-500 bg-white dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
     <div class="p-3">
       <div class="flex justify-between items-center mb-2">
-        <Avatar href="https://github.com/mwwlean" src={Images} alt="mwwlean" />
+        <Avatar href="https://github.com/mwwlean" src={Profile} alt="mwwlean" />
           <a href="https://github.com/mwwlean"><Button size="xs">View Github Profile</Button></a> 
       </div>
       <div class="text-base font-semibold leading-none text-gray-900 dark:text-white">
