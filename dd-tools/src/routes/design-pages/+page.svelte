@@ -2,7 +2,6 @@
     import { Card } from 'flowbite-svelte';
     import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
     import { Popover, Button, Avatar } from 'flowbite-svelte';
-    import images from '/src/routes/components/images';
  </script>
  
  <div class="flex justify-center mt-16 text-4xl dark:text-slate-50 font-semibold">Design Tools 🎨</div>
