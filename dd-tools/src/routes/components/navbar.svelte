@@ -23,7 +23,7 @@
   </NavBrand>
   <NavHamburger on:click={toggle} />
   <NavUl {hidden}>
-    <NavLi href="/about"  class="lg:text-base font-normal">About</NavLi>
+    <NavLi href="/about-pages"  class="lg:text-base font-normal">About</NavLi>
     <NavLi class="cursor-pointer lg:text-base font-normal" >
       Dev Tools<ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
     </NavLi>
@@ -34,7 +34,6 @@
       </a>
     </MegaMenu>
     <NavLi href="/services" class="lg:text-base font-normal">Services</NavLi>
-    <NavLi href="/services" class="lg:text-base font-normal">Products</NavLi>
     <NavLi href="/services" class="lg:text-base font-normal">Contact</NavLi>
     <DarkMode {btnClass}/>
   </NavUl>

@@ -9,18 +9,12 @@
     import Canva from  "$lib/assets/canva.png";
  </script>
  
- <div class="flex justify-center mt-16 text-4xl dark:text-slate-50 font-semibold">Design Tools 🎨</div>
- <div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center">  
-        <Card href="/cards" class="col-span-1" >
+ <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-2xl dark:text-slate-50 font-semibold">Design Tools 🎨</div>
+ <div class="max-w-screen-lg m-auto grid md:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 justify-center">  
+        <Card href="https://www.figma.com/" class="col-span-1" >
             <img src={Figma} alt="Figma" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Figma</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Figma is a collaborative design tool in the cloud, allowing users to create, prototype, and iterate on interface designs seamlessly.</p>
-        </Card>
-        
-        <Card href="/cards" class="col-span-1" >
-            <img src={Xd} alt="Adobe XD" class="w-14 h-14">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Adobe XD</h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Adobe XD is Adobe's design and prototyping tool for creating user experiences in web and mobile applications.</p>
         </Card>
         
         <Card href="https://www.adobe.com/products/photoshop.html" class="col-span-1" >
@@ -53,6 +47,7 @@
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
                 Framer is a design and prototyping tool that empowers designers to create interactive user interfaces with a focus on dynamic user experiences.</p>
         </Card>
+
  </div>
 
 

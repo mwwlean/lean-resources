@@ -2,8 +2,8 @@
     import { Card } from 'flowbite-svelte';
  </script>
  
- <div class="flex justify-center mt-16 text-4xl dark:text-slate-50 font-semibold">Typography 🎨</div>
- <div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center">  
+ <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-2xl dark:text-slate-50 font-semibold">Typography 🎨</div>
+ <div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center md:grid-cols-2 lg:grid-cols-3">  
         <Card href="/cards" class="col-span-1" >
             <img src="/src/routes/components/images/figma.png" alt="Figma" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Figma</h5>
