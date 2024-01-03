@@ -2,6 +2,7 @@
     import { Card } from 'flowbite-svelte';
    import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
    import { Popover, Button, Avatar } from 'flowbite-svelte';
+   import Profile from "$lib/assets/profile.jpg";
    import Odin from "$lib/assets/Odin.png";
    import Scrimba from "$lib/assets/scrimba.png";
    import Udemy from "$lib/assets/Udemy.png";
