@@ -14,7 +14,7 @@
     import Ember from  "$lib/assets/ember-logo.svg";
  </script>
  
- <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-xl dark:text-slate-50 font-semibold">FrontEnd Frameworks and Tools 💻</div>
+ <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-xl dark:text-slate-50 font-semibold">Frontend Frameworks and Tools 💻</div>
  <div class="max-w-screen-lg m-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 justify-center">  
         <Card href="https://react.dev/" class="col-span-1" >
             <img src={React} alt="ReactJS" class="w-14 h-14">
