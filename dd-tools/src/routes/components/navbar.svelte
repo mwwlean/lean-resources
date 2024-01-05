@@ -22,6 +22,7 @@
   </NavBrand>
   <NavHamburger on:click={toggle} />
   <NavUl {hidden}>
+    <NavLi href="/"  class="lg:text-base font-normal">About (maintenance)</NavLi>
     <NavLi class="cursor-pointer lg:text-base font-normal" >
       Dev Tools<ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
     </NavLi>
@@ -31,10 +32,7 @@
         <svelte:component this={IconOutline} name={item.icon} class="w-4 h-4 me-2" />{item.name}
       </a>
     </MegaMenu>
-    <NavLi href="/about-pages"  class="lg:text-base font-normal"></NavLi>
-    
-
-    
+    <NavLi href="/"  class="lg:text-base font-normal">UI Components(coming soon)</NavLi>
     <DarkMode {btnClass}/>
   </NavUl>
 </Navbar>
