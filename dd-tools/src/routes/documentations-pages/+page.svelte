@@ -6,7 +6,7 @@
     import Mdn from "$lib/assets/mdn.png";
     import Wschool from "$lib/assets/w3.png";
     import Stack from "$lib/assets/stack.png";
-    import Github from "$lib/assets/github.png";
+    import Github from "$lib/assets/Github.png";
     import Glass from "$lib/assets/glass.png";
     import Google from "$lib/assets/google.png";
 
