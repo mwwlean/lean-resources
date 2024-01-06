@@ -71,13 +71,19 @@
     };
 </script>
 <svelte:window on:scroll={handleOnScroll} />
-<div class="back_to_start" on:click={goStart} class:hidden>Back To Start</div>
-<div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-xl dark:text-slate-50 font-semibold">All <div class="lg:p-3 p-2"><ChevronDownSolid class="lg:w-5 lg:h-5 w-4 h-4 text-white dark:text-white"/>
+<div class="back_to_start" on:click={goStart} class:hidden>☝🏻☝🏻☝🏻</div>
+<div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-lg dark:text-slate-50 font-semibold">All tools, courses and more ⚙️<div class="lg:p-3 p-2"><ChevronDownSolid class="lg:w-5 lg:h-5 w-4 h-4 text-black dark:text-white"/>
   <Dropdown {activeUrl}>
     <DropdownItem href="/all-pages">All</DropdownItem>
-    <DropdownItem href="/docs/components/dropdown">Dropdown</DropdownItem>
-    <DropdownItem href="/docs/components/accordion">Accordion</DropdownItem>
-    <DropdownItem href="/docs/components/alert">Alert</DropdownItem>
+    <DropdownItem href="/design-pages">Design</DropdownItem>
+    <DropdownItem href="/frontend-pages">Frontend Tools</DropdownItem>
+    <DropdownItem href="/backend-pages">Backend Tools</DropdownItem>
+    <DropdownItem href="/courses-pages">Coding Courses</DropdownItem>
+    <DropdownItem href="/documentatio-pages">Documentations</DropdownItem>
+    <DropdownItem href="/icons-pages">Icons</DropdownItem>
+    <DropdownItem href="/colors-pages">Colors</DropdownItem>
+    <DropdownItem href="/typography-pages">Typography</DropdownItem>
+
   </Dropdown></div>
 </div>
 <div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center md:grid-cols-2 lg:grid-cols-3">  
@@ -512,8 +518,8 @@
         right: 20px;
         user-select: none;
         bottom: 20px;
-        color: yellow;
-        background-color: black;
+        color: white;
+        background-color: rgb(255, 98, 0);
         padding: 5px;
         font-weight: 700;
         border-radius: 5px;

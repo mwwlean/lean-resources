@@ -3,10 +3,50 @@
     import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
     import { Popover, Button, Avatar } from 'flowbite-svelte';
     import Profile from "$lib/assets/profile.jpg";
+    import { Dropdown, DropdownItem } from 'flowbite-svelte';
+    import { ChevronDownSolid } from 'flowbite-svelte-icons';
+    import { page } from '$app/stores';
+    $: activeUrl = $page.url.pathname;
+    export let buttonVisibleOnPX = 200;
+    let hidden = true;
 
+    const goStart = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    const scrollElement = () => {
+        return document.documentElement || document.body;
+    };
+
+    const handleOnScroll = () => {
+        if (scrollElement().scrollTop > buttonVisibleOnPX) {
+            hidden = false;
+        } else {
+            hidden = true;
+        }
+    };
  </script>
  
- <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-xl dark:text-slate-50 font-semibold">Colors 🎨</div>
+ 
+ <svelte:window on:scroll={handleOnScroll} />
+ <div class="back_to_start" on:click={goStart} class:hidden>☝🏻☝🏻☝🏻</div>
+ <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-xl dark:text-slate-50 font-semibold">Colors 🎨<div class="lg:p-3 p-2"><ChevronDownSolid class="lg:w-5 lg:h-5 w-4 h-4 text-black dark:text-white"/>
+  <Dropdown {activeUrl}>
+    <DropdownItem href="/all-pages">All</DropdownItem>
+    <DropdownItem href="/design-pages">Design</DropdownItem>
+    <DropdownItem href="/frontend-pages">Frontend Tools</DropdownItem>
+    <DropdownItem href="/backend-pages">Backend Tools</DropdownItem>
+    <DropdownItem href="/courses-pages">Coding Courses</DropdownItem>
+    <DropdownItem href="/documentations-pages">Documentations</DropdownItem>
+    <DropdownItem href="/icons-pages">Icons</DropdownItem>
+    <DropdownItem href="/colors-pages">Colors</DropdownItem>
+    <DropdownItem href="/typography-pages">Typography</DropdownItem>
+
+  </Dropdown></div>
+</div>
  <div class="max-w-screen-lg m-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 justify-center">  
         <Card href="https://fonts.google.com/" class="col-span-1" >
             <img src="https://designresourc.es/assets/image/5ea6cf69a13e986dd80ffa3f_5ea1af0ffe57820563564805_logo%20(1).png" alt="Khroma" class="w-14 h-14">
@@ -81,3 +121,25 @@
         </ul>
       </div>
 </Popover>
+
+<style>
+  .back_to_start {
+        opacity: 1;
+        transition: opacity 0.5s, visibility 0.5s;
+        position: fixed;
+        z-index: 99;
+        right: 20px;
+        user-select: none;
+        bottom: 20px;
+        color: white;
+        background-color: rgb(255, 98, 0);
+        padding: 5px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .back_to_start.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+</style>
