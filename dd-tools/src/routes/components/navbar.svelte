@@ -20,19 +20,5 @@
   <NavBrand href="/">
     <span class="self-center whitespace-nowrap text-2xl font-extrabold text-orange-400">{name}</span>
   </NavBrand>
-  <NavHamburger on:click={toggle} />
-  <NavUl {hidden}>
-    <NavLi href="/"  class="lg:text-base font-normal">About (maintenance)</NavLi>
-    <NavLi class="cursor-pointer lg:text-base font-normal" >
-      Dev Tools<ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
-    </NavLi>
-    <MegaMenu items={menu} let:item>
-      <a href={item.href} class="flex items-center hover:text-primary-600 dark:hover:text-primary-500 lg:text-base font-normal">
-        <span class="sr-only">{item.name}</span>
-        <svelte:component this={IconOutline} name={item.icon} class="w-4 h-4 me-2" />{item.name}
-      </a>
-    </MegaMenu>
-    <NavLi href="/"  class="lg:text-base font-normal">UI Components(coming soon)</NavLi>
     <DarkMode {btnClass}/>
-  </NavUl>
 </Navbar>

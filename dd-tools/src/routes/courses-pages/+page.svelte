@@ -11,7 +11,7 @@
    import Khan from  "$lib/assets/Khan.png";
    import Coursera from  "$lib/assets/Coursera.png";
    import Free from  "$lib/assets/Free.png";
-   import Spring from  "$lib/assets/sprintboard.png";
+   import Sring from  "$lib/assets/sprintboard.png";
 </script>
 
 <div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-xl dark:text-slate-50 font-semibold">Online Coding Courses 📚</div>
@@ -61,7 +61,7 @@
        </Card>
 
        <Card href="https://www.springboard.com/" class="col-span-1" >
-           <img src={Spring} alt="Spring Board" class="w-14 h-14">
+           <img src={Sring} alt="Spring Board" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Spring Board</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             Springboard is an online platform for career-focused courses and mentorship programs.</p>
