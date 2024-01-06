@@ -3,31 +3,38 @@
      import Navbar from "./components/navbar.svelte";
      import { Section, Quotes, Testimonial, TestimonialCard, TestimonialCardItem } from 'flowbite-svelte-blocks';
      import Profile from "$lib/assets/profile.jpg";
-     export let buttonVisibleOnPX = 200;
-    let hidden = true;
+     import { Marquee } from 'flowbite-svelte'
+     import React from "$lib/assets/react.png";
+    import Angular from "$lib/assets/angular.png";
+    import Vue from  "$lib/assets/vue.png";
+    import Sveltekit from  "$lib/assets/svelte.png";
+  
+        export let buttonVisibleOnPX = 200;
+            let hidden = true;
 
-    const goStart = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+            const goStart = () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
 
-    const scrollElement = () => {
-        return document.documentElement || document.body;
-    };
+            const scrollElement = () => {
+                return document.documentElement || document.body;
+            };
 
-    const handleOnScroll = () => {
-        if (scrollElement().scrollTop > buttonVisibleOnPX) {
-            hidden = false;
-        } else {
-            hidden = true;
-        }
-    };
+            const handleOnScroll = () => {
+                if (scrollElement().scrollTop > buttonVisibleOnPX) {
+                    hidden = false;
+                } else {
+                    hidden = true;
+            }
+        };
 </script>
 <svelte:window on:scroll={handleOnScroll} />
 <div class="back_to_start" on:click={goStart} class:hidden>☝🏻☝🏻☝🏻</div>
-<main style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh;">
+
+<main style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
     <div class="flex justify-center flex-row justify-center items-center content-center max-w-screen-md flex-col m-auto text-center">
         <div class="m-auto p-5">
             <p class="md:text-6xl text-4xl font-black dark:text-slate-100 pt-2 tracking-tight text-gray-950">LEAN RESOURCES</p>
@@ -35,9 +42,14 @@
             <a href="/all-pages"><button class="bg-orange-500 p-2 pl-5 pr-5 hover:scale-[1.2] cursor-pointer text-white mt-6 rounded-lg font-semibold border border-orange-400 hover:border-slate-400">Explore Now🚀</button></a>
         </div>
     </div>
+    <Marquee speed={0.5}  shadow class="py-5">
+        <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={React} />
+        <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={Vue} />
+        <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={Angular}/>
+        <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={Sveltekit} />
+    </Marquee>
 </main>
-
-<div style="height: 60vh; margin-top: 5rem;">
+<div style="height: 60vh; margin-top: 20rem;">
     <Section name="testimonial">
         <Testimonial icon={Quotes}>
           <blockquote>
@@ -54,7 +66,8 @@
       </Section>
 </div>
 
-<div class="pt-5 pb-20">
+
+<div class="pt-10 pb-20">
     <Footer></Footer>
 </div>
 

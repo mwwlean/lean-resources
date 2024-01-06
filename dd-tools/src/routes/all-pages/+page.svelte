@@ -72,7 +72,7 @@
 </script>
 <svelte:window on:scroll={handleOnScroll} />
 <div class="back_to_start" on:click={goStart} class:hidden>☝🏻☝🏻☝🏻</div>
-<div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-lg dark:text-slate-50 font-semibold">All tools, courses and more ⚙️<div class="lg:p-3 p-2"><ChevronDownSolid class="lg:w-5 lg:h-5 w-4 h-4 text-black dark:text-white"/>
+<div class="flex justify-center mt-16 lg:text-4xl md:text-2xl text-lg dark:text-slate-50 font-semibold">All tools, courses and more ⚙️<div class="lg:p-3 p-2 "><ChevronDownSolid class="lg:w-5 lg:h-5 w-4 h-4 text-black dark:text-white"/>
   <Dropdown {activeUrl}>
     <DropdownItem href="/all-pages">All</DropdownItem>
     <DropdownItem href="/design-pages">Design</DropdownItem>
