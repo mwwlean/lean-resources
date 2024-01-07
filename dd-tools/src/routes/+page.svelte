@@ -8,6 +8,7 @@
     import Angular from "$lib/assets/angular.png";
     import Vue from  "$lib/assets/vue.png";
     import Sveltekit from  "$lib/assets/svelte.png";
+    
   
         export let buttonVisibleOnPX = 200;
             let hidden = true;

@@ -9,6 +9,7 @@
     import Canva from  "$lib/assets/canva.png";
     import Sketch from  "$lib/assets/sketch.png";
     import Webflow from  "$lib/assets/webflow.png";
+    import Method from "$lib/assets/Methods.png";
     import { Dropdown, DropdownItem } from 'flowbite-svelte';
     import { ChevronDownSolid } from 'flowbite-svelte-icons';
     import { page } from '$app/stores';
@@ -110,6 +111,12 @@
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Wireframe CC</h5>
         <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
           Wireframe.cc is an app that lets you create wireframes for any screen with a limited palette of colors and options.</p>
+    </Card>
+
+    <Card href="https://www.designmethods.co.uk/?fbclid=IwAR0J56MQJrCCdDMLskwXm7Vhq2TI7JgLpBM4DAIHekLyFlnKZvvNvvGsklE" class="col-span-1" >
+      <img src={Method} alt="Design Methods" class="w-14 h-14">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Design Methods</h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">A collection of the best UX and UI Practices</p>
     </Card>
 
  </div>
