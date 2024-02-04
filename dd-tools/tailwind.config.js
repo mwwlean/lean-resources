@@ -3,13 +3,14 @@ export default {
   content: [
     "./src/**/*.{html,js,svelte,ts}",
     "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+    "./node_modules/flowbite/**/*.{html,js,svelte,ts}",
   ],
   darkMode: "class",
 
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Poppins"],
+        poppins: ["Poppins"],
         // Other font families...
       },
       colors: {
@@ -29,5 +30,5 @@ export default {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), require("tailwindcss-patterns")],
 };
