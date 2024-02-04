@@ -54,7 +54,7 @@
     <Section name="testimonial">
         <Testimonial icon={Quotes}>
           <blockquote>
-            <p class="text-lg lg:text-xl font-medium text-gray-900 dark:text-white">"All the resources you need, neatly listed for you. Tutorials, tools, and more - discover it all effortlessly.👌🏼"</p>
+            <p class="text-lg lg:text-xl font-medium text-gray-900 dark:text-white">"test"</p>
           </blockquote>
           <svelte:fragment slot="footer">
             <img class="w-6 h-6 rounded-full" src={Profile} alt="michael profile" />
