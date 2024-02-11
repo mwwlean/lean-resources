@@ -2,7 +2,7 @@
     import { Card } from 'flowbite-svelte';
     import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
     import { Popover, Button, Avatar } from 'flowbite-svelte';
-    import Profile from "$lib/assets/profile.jpg";
+    import Profile from "$lib/assets/profile.png";
     import { Dropdown, DropdownItem } from 'flowbite-svelte';
     import { ChevronDownSolid } from 'flowbite-svelte-icons';
     import { page } from '$app/stores';
@@ -47,41 +47,41 @@
 
   </Dropdown></div>
 </div>
- <div class="max-w-screen-lg m-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 justify-center">  
-        <Card href="https://fonts.google.com/" class="col-span-1" >
+ <div class="max-w-screen-lg m-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 justify-center animate-fade-right animate-once animate-duration-[800ms] animate-delay-200 animate-ease-in-out animate-normal">  
+        <Card href="https://www.khroma.co/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
             <img src="https://designresourc.es/assets/image/5ea6cf69a13e986dd80ffa3f_5ea1af0ffe57820563564805_logo%20(1).png" alt="Khroma" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Khroma</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Khroma is a tool for generating color palettes based on your preferences.</p>
         </Card>
 
-        <Card href="https://www.typographicposters.com/?ref=designresourc.es" class="col-span-1" >
-          <img src="https://designresourc.es/assets/image/5ea0291287be017411f4dc60_colorhunt-p-500.jpeg"  alt="Color hunt" class="w-14 h-14">
+        <Card href="https://colorhunt.co/?ref=designresourc.es" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
+          <img src="https://designresourc.es/_next/image?url=%2Fimg%2F5ea0291287be017411f4dc60_colorhunt.jpg&w=48&q=75"  alt="Color hunt" class="w-14 h-14">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Color hunt</h5>
           <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             Color Hunt is a website providing curated color palettes for design inspiration.</p>
       </Card>
         
-        <Card href="https://www.fontfabric.com/free-fonts/?ref=designresourc.es" class="col-span-1" >
-            <img src="https://designresourc.es/assets/image/5ea6cf67fadd3cd93ad57b61_5ea1c171b910a3ad1dca6c08_logo%20(3).png" alt="Font fabric" class="w-14 h-14">
+        <Card href="https://pigment.shapefactory.co/?ref=designresourc.es" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
+            <img src="https://designresourc.es/_next/image?url=%2Fimg%2F5ea6cf67fadd3cd93ad57b61_5ea1c171b910a3ad1dca6c08_logo%2520(3).png&w=48&q=75" alt="Pigment" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Pigment</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Pigment is an app for creating and exploring color palettes, widely used for design inspiration.</p>
         </Card>
      
-        <Card href="https://fonts.google.com/" class="col-span-1" >
-            <img src="https://designresourc.es/assets/image/5ebff9260962176e64a111c1_Coolors.jpg" alt="Coolers" class="w-14 h-14">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Coolers</h5>
+        <Card href="https://coolors.co/?ref=designresourc.es" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
+            <img src="https://designresourc.es/_next/image?url=%2Fimg%2F5ebff9260962176e64a111c1_Coolors.jpg&w=48&q=75" alt="Coolers" class="w-14 h-14">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Coolors</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Coolors is a color scheme generator for creating harmonious palettes.</p>
         </Card>
 
-        <Card href="https://www.typographicposters.com/?ref=designresourc.es" class="col-span-1" >
-          <img src="https://designresourc.es/assets/image/5ea6caee8b51eb51c9eae398_5ea59b89f0e208f92353b922_2980900f-ddbe-406b-a188-ed1f7fcc1d52.gif"  alt="Curls" class="w-14 h-14">
+        <Card href="https://www.culrs.com/?ref=designresourc.es" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
+          <img src="https://designresourc.es/_next/image?url=%2Fimg%2F5ea6caee8b51eb51c9eae398_5ea59b89f0e208f92353b922_2980900f-ddbe-406b-a188-ed1f7fcc1d52.gif&w=48&q=75"  alt="Curls" class="w-14 h-14">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Curls</h5>
           <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             Culrs is a simple tool for creating color palettes.</p>
       </Card>
         
-        <Card href="https://www.fontfabric.com/free-fonts/?ref=designresourc.es" class="col-span-1" >
-            <img src="https://designresourc.es/assets/image/5ea592f8c07d78e3663ba689_f7e1dd94-a807-44ba-adb0-8482164a0a0b.gif" alt="Happy Hues" class="w-14 h-14">
+        <Card href="https://www.happyhues.co/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
+            <img src="https://designresourc.es/_next/image?url=%2Fimg%2F5ea592f8c07d78e3663ba689_f7e1dd94-a807-44ba-adb0-8482164a0a0b.gif&w=48&q=75" alt="Happy Hues" class="w-14 h-14">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Happy Hues</h5>
             <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Happy Hues is a website offering beautiful color combinations for design.</p>
         </Card>
@@ -108,13 +108,13 @@
         <ul class="flex text-sm font-light">
           <li class="me-2">
             <a href="https://github.com/mwwlean?tab=following" class="hover:underline">
-              <span class="font-semibold text-gray-900 dark:text-white">8</span>
+              <span class="font-semibold text-gray-900 dark:text-white">12</span>
               <span>Following</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/mwwlean?tab=followers" class="hover:underline">
-              <span class="font-semibold text-gray-900 dark:text-white">7</span>
+              <span class="font-semibold text-gray-900 dark:text-white">8</span>
               <span>Followers</span>
             </a>
           </li>

@@ -2,7 +2,7 @@
     import { Card } from 'flowbite-svelte';
    import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
    import { Popover, Button, Avatar } from 'flowbite-svelte';
-   import Profile from "$lib/assets/profile.jpg";
+   import Profile from "$lib/assets/profile.png";
    import Odin from "$lib/assets/Odin.png";
    import Scrimba from "$lib/assets/scrimba.png";
    import Udemy from "$lib/assets/Udemy.png";
@@ -55,59 +55,59 @@
 
   </Dropdown></div>
 </div>
-<div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center md:grid-cols-2 lg:grid-cols-3">  
-       <Card href="https://www.theodinproject.com/" class="col-span-1" >
+<div class="max-w-screen-lg m-auto grid md:grid-cols-3 gap-6 mt-16 justify-center md:grid-cols-2 lg:grid-cols-3 animate-fade-right animate-once animate-duration-[800ms] animate-delay-200 animate-ease-in-out animate-normal">  
+       <Card href="https://www.theodinproject.com/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Odin} alt="Odin Project" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Odin Project</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">The Odin Project is a free web development curriculum for learning programming, HTML, CSS, and JavaScript through hands-on projects.</p>
        </Card>
        
-       <Card href="https://cs50.harvard.edu/x/2024/" class="col-span-1" >
+       <Card href="https://cs50.harvard.edu/x/2024/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={CS50} alt="CS50" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">CS50</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">CS50 is an introductory computer science course offered by Harvard University, covering fundamental concepts and programming languages.</p>
        </Card>
        
-       <Card href="https://www.freecodecamp.org/" class="col-span-1" >
+       <Card href="https://www.freecodecamp.org/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Free} alt="FreeCodeCamp" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">FreeCodeCamp</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             freeCodeCamp is a nonprofit online platform offering free coding education, with interactive lessons and projects focusing on web development skills.</p>
        </Card>
-       <Card href="https://www.codecademy.com/" class="col-span-1" >
+       <Card href="https://www.codecademy.com/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={CodeCademy} alt="Code Cademy" class="w-16 h-16">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">CodeCademy</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight text-sm">Codecademy is an online learning platform that offers interactive coding lessons to help users acquire programming skills.</p>
        </Card>
        
-       <Card href="https://spring.io/" class="col-span-1" >
+       <Card href="https://spring.io/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Udemy} alt="Springboot" class="w-20 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Udemy</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">Udemy is an online learning platform offering a wide range of courses on various subjects, including programming, business, and personal development.</p>
        </Card>
        
-       <Card href="https://www.khanacademy.org/" class="col-span-1" >
+       <Card href="https://www.khanacademy.org/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Khan} alt="Khan Academy" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Khan Academy</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             Khan Academy is a non-profit educational platform offering free online courses in subjects like mathematics, science, and programming.</p>
        </Card>
 
-       <Card href="https://www.coursera.org/" class="col-span-1" >
+       <Card href="https://www.coursera.org/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Coursera} alt="ASP.NET" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Coursera</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             Coursera is an online learning platform that offers a variety of courses, certificates, and degree programs from universities and organizations worldwide.</p>
        </Card>
 
-       <Card href="https://www.springboard.com/" class="col-span-1" >
+       <Card href="https://www.springboard.com/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Sring} alt="Spring Board" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Spring Board</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
             Springboard is an online platform for career-focused courses and mentorship programs.</p>
        </Card>
 
-       <Card href="https://scrimba.com/" class="col-span-1" >
+       <Card href="https://scrimba.com/" class="col-span-1  transition duration-500 ease-in-out transition-transform hover:scale-[1.1]" >
            <img src={Scrimba} alt="Scrimba" class="w-14 h-14">
            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-2">Scrimba</h5>
            <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight  text-sm">
@@ -136,13 +136,13 @@
        <ul class="flex text-sm font-light">
          <li class="me-2">
            <a href="https://github.com/mwwlean?tab=following" class="hover:underline">
-             <span class="font-semibold text-gray-900 dark:text-white">8</span>
+             <span class="font-semibold text-gray-900 dark:text-white">12</span>
              <span>Following</span>
            </a>
          </li>
          <li>
            <a href="https://github.com/mwwlean?tab=followers" class="hover:underline">
-             <span class="font-semibold text-gray-900 dark:text-white">7</span>
+             <span class="font-semibold text-gray-900 dark:text-white">8</span>
              <span>Followers</span>
            </a>
          </li>

@@ -1,7 +1,7 @@
 <script>
     import { Footer, FooterCopyright, FooterLinkGroup, FooterBrand, FooterLink } from 'flowbite-svelte';
     import { Popover, Button, Avatar } from 'flowbite-svelte';
-    import Profile from "$lib/assets/profile.jpg";
+    import Profile from "$lib/assets/profile.png";
   </script>
  
     <Footer>
@@ -24,13 +24,13 @@
       <ul class="flex text-sm font-light">
         <li class="me-2">
           <a href="https://github.com/mwwlean?tab=following" class="hover:underline">
-            <span class="font-semibold text-gray-900 dark:text-white">8</span>
+            <span class="font-semibold text-gray-900 dark:text-white">12</span>
             <span>Following</span>
           </a>
         </li>
         <li>
           <a href="https://github.com/mwwlean?tab=followers" class="hover:underline">
-            <span class="font-semibold text-gray-900 dark:text-white">7</span>
+            <span class="font-semibold text-gray-900 dark:text-white">8</span>
             <span>Followers</span>
           </a>
         </li>

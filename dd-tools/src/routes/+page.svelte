@@ -2,7 +2,7 @@
      import Footer from "./components/footer.svelte";
      import Navbar from "./components/navbar.svelte";
      import { Section, Quotes, Testimonial, TestimonialCard, TestimonialCardItem } from 'flowbite-svelte-blocks';
-     import Profile from "$lib/assets/profile.jpg";
+     import Profile from "$lib/assets/profile.png";
      import { Marquee } from 'flowbite-svelte'
      import React from "$lib/assets/react.png";
     import Angular from "$lib/assets/angular.png";
@@ -35,26 +35,26 @@
 <svelte:window on:scroll={handleOnScroll} />
 <div class="back_to_start" on:click={goStart} class:hidden>☝🏻☝🏻☝🏻</div>
 
-<main style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
-    <div class="flex justify-center flex-row justify-center items-center content-center max-w-screen-md flex-col m-auto text-center">
-        <div class="m-auto p-5">
-            <p class="md:text-6xl text-4xl font-black dark:text-slate-100 pt-2 tracking-tight text-gray-950">LEAN RESOURCES</p>
-            <p class="md:text-lg text-xs pt-5 text-orange-400 tracking-tight">Your Easy Path to Coding Resources💻</p>
-            <a href="/all-pages"><button class="bg-orange-500 p-2 pl-5 pr-5 hover:scale-[1.2] cursor-pointer text-white mt-6 rounded-lg font-semibold border border-orange-400 hover:border-slate-400">Explore Now🚀</button></a>
+<main style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; ">
+    <div class="flex justify-center flex-row justify-center items-center content-center max-w-screen-md flex-col m-auto text-center ">
+        <div class="m-auto p-5 ">
+            <p class="md:text-6xl text-4xl font-black dark:text-slate-100 pt-2 tracking-tight text-gray-950 animate-fade-right animate-once animate-duration-[1000ms] animate-delay-200 animate-ease-in-out animate-normal">LEAN RESOURCES</p>
+            <p class="md:text-lg text-xs pt-5 text-orange-400 tracking-tight animate-fade-right animate-once animate-duration-[1200ms] animate-delay-200 animate-ease-in-out animate-normal">Your Easy Path to Coding Resources💻</p>
+            <a href="/all-pages"><button class="bg-orange-500 p-2 pl-5 pr-5 hover:scale-[1.2] cursor-pointer text-white mt-6 rounded-lg font-semibold border border-orange-400 hover:border-slate-400 animate-fade-right animate-once animate-duration-[1400ms] animate-delay-200 animate-ease-in-out animate-normal">Explore Now🚀</button></a>
         </div>
     </div>
-    <Marquee speed={0.5}  shadow class="py-5">
+    <Marquee speed={0.5}  shadow class="py-5 animate-fade animate-once animate-duration-[1600ms] animate-delay-200 animate-ease-in-out animate-normal">
         <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={React} />
         <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={Vue} />
         <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={Angular}/>
         <img class="w-16 h-16" alt="flowbite-svelte icon logo" src={Sveltekit} />
     </Marquee>
 </main>
-<div style="height: 60vh; margin-top: 20rem;">
+<div style="height: 60vh; margin-top: 20rem;" class="animate-fade-right animate-once animate-duration-[800ms] animate-delay-200 animate-ease-in-out animate-normal">
     <Section name="testimonial">
         <Testimonial icon={Quotes}>
           <blockquote>
-            <p class="text-lg lg:text-xl font-medium text-gray-900 dark:text-white">"All the resources you need, neatly listed for you. Tutorials, tools, and more - discover it all effortlessly.👌🏼"</p>
+            <p class="text-lg lg:text-xl font-medium text-gray-900 dark:text-white ">"All the resources you need, neatly listed for you. Tutorials, tools, and more - discover it all effortlessly.👌🏼"</p>
           </blockquote>
           <svelte:fragment slot="footer">
             <img class="w-6 h-6 rounded-full" src={Profile} alt="michael profile" />
